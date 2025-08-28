@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ReelTime - Video Feed</title>
+    <title>BuzzClips - Video Feed</title>
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -68,7 +68,7 @@
         <!-- Navigation Header -->
         <div class="absolute top-0 left-0 right-0 z-40 p-4 bg-gradient-to-b from-black/80 to-transparent">
             <div class="flex justify-between items-center">
-                <h1 class="text-white font-bold text-xl">ReelTime</h1>
+                <h1 class="text-white font-bold text-xl">BuzzClips</h1>
                 <div class="flex space-x-2">
                     @auth
                         @if(auth()->user()->isCreator())
