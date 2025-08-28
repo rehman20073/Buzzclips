@@ -27,7 +27,6 @@ class AdminPanelProvider extends PanelProvider
             ->default()
             ->id('admin')
             ->path('creator')
-            ->brandName('BuzzClips Creator')
             ->login()
             ->authGuard('web')
             ->profile()
@@ -38,10 +37,8 @@ class AdminPanelProvider extends PanelProvider
                     ->openUrlInNewTab(),
             ])
             ->colors([
-                'primary' => Color::Fuchsia,
-                'gray' => Color::Slate,
+                'primary' => Color::Violet,
             ])
-            ->viteTheme('resources/css/filament/creator/theme.css')
             ->resources([
                 \App\Filament\Resources\Videos\VideoResource::class,
             ])
