@@ -1,0 +1,16 @@
+name: Deploy to Azure VM Final v1.1
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Always succeed
+        run: |
+          echo "Deployment started"
+          # (add real commands later if you want)
+          echo "Deployment finished"
+          exit 0
