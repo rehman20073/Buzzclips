@@ -1,4 +1,4 @@
-name: Deploy to Azure v1.1
+name: Deploy to Azure v1.2
 
 on:
   push:

@@ -14,17 +14,22 @@
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
-    <body class="font-sans text-gray-900 antialiased">
-        <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100">
-            <div>
-                <a href="/">
-                    <x-application-logo class="w-20 h-20 fill-current text-gray-500" />
-                </a>
+    <body class="font-sans antialiased bg-gray-950">
+        <div class="min-h-screen flex flex-col items-center justify-center p-6 relative overflow-hidden">
+            <div class="absolute inset-0 opacity-30 pointer-events-none">
+                <div class="absolute -top-24 -left-24 w-80 h-80 rounded-full blur-3xl bg-fuchsia-500"></div>
+                <div class="absolute -bottom-24 -right-24 w-96 h-96 rounded-full blur-3xl bg-sky-500"></div>
             </div>
 
-            <div class="w-full sm:max-w-md mt-6 px-6 py-4 bg-white shadow-md overflow-hidden sm:rounded-lg">
+            <a href="/" class="relative z-10 inline-flex items-center space-x-2">
+                <span class="inline-flex h-9 w-9 rounded-md bg-gradient-to-br from-fuchsia-500 via-violet-500 to-sky-500"></span>
+                <span class="text-white text-lg font-semibold">BuzzClips</span>
+            </a>
+
+            <div class="relative z-10 w-full sm:max-w-md mt-6 px-6 py-6 bg-white/5 backdrop-blur-md border border-white/10 shadow-lg overflow-hidden sm:rounded-2xl">
                 {{ $slot }}
             </div>
+            <p class="relative z-10 mt-6 text-white/50 text-xs">Welcome back — let’s clip it.</p>
         </div>
     </body>
 </html>
